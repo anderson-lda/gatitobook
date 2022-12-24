@@ -1,6 +1,6 @@
 # Gatitobook
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.19.
+Para funcionar juntamente com a API foi necessário instalar o Node versão 12.22.12 (v14 e v14 não funcionaram ambos)
+angular/cli versão 13.3.9 instalado (aparece que localmente é a versão 11.2.19 por causa das adaptações do Node)
 
 ## Comando de criação
 ng new gatitobook --strict
