@@ -1,6 +1,6 @@
 # Gatitobook
 Para funcionar juntamente com a API foi necessário instalar o Node versão 12.22.12 (v14 e v14 não funcionaram ambos)
-angular/cli versão 13.3.9 instalado (aparece que localmente é a versão 11.2.19 por causa das adaptações do Node)
+angular/cli versão 13.3.9 instalado (globalmente)
 
 ## Comando de criação
 ng new gatitobook --strict
@@ -20,6 +20,10 @@ ng g c home
 ng g c home/login
 ng g m autenticacao
 ng g s autenticacao/autenticacao
+ng g m animais --routing
+ng g c animais/lista-animais
+ng g m componentes/mensagem
+ng g c componentes/mensagem
 
 ## Development server
 
