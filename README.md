@@ -24,6 +24,9 @@ ng g m animais --routing
 ng g c animais/lista-animais
 ng g m componentes/mensagem
 ng g c componentes/mensagem
+ng g c home/novo-usuario
+ng g s home/novo-usuario/novo-usuario
+ng g interface home/novo-usuario/novo-usuario
 
 ## Development server
 
