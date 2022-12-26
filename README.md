@@ -27,6 +27,7 @@ ng g c componentes/mensagem
 ng g c home/novo-usuario
 ng g s home/novo-usuario/novo-usuario
 ng g interface home/novo-usuario/novo-usuario
+ng g s home/novo-usuario/usuario-existe
 
 ## Development server
 
