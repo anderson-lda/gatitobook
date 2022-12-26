@@ -1,17 +1,26 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { UsuarioService } from './usuario/usuario.service';
+import { tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AutenticacaoService {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private usuarioService: UsuarioService) { }
 
-  autenticar(usuario: string, senha: string): Observable<any>{ //Observable é equivalente ao promise do JavaScript
+  autenticar(usuario: string, senha: string): Observable<HttpResponse<any>>{ //Observable é equivalente ao promise do JavaScript
     return this.httpClient.post('http://localhost:3000/user/login', {
       userName: usuario, password: senha,
-    });
+    },{
+      observe: 'response' //pega o header também, além do body
+    }).pipe(
+      tap((res) => {
+        const authToken = res.headers.get('x-access-token') ?? '';
+        this.usuarioService.salvaToken(authToken);
+      })
+    );
   };
 }

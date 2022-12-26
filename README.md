@@ -8,13 +8,14 @@ onde o strict foi utilizado para haver mais verificações de tipo no projeto
 
 ## Bibliotecas instaladas
 npm i bootstrap font-awesome
+npm i jwt-decode
 
 ## Obs.:
 necessário adicionar em styles do angular.json:
 "./node_modules/bootstrap/dist/css/bootstrap.min.css",
 "./node_modules/font-awesome/css/font-awesome.css"
 
-## criação de páginas
+## criação de serviços/componentes/módulos
 ng generate module home --routing
 ng g c home
 ng g c home/login
@@ -28,6 +29,13 @@ ng g c home/novo-usuario
 ng g s home/novo-usuario/novo-usuario
 ng g interface home/novo-usuario/novo-usuario
 ng g s home/novo-usuario/usuario-existe
+ng g s autenticacao/token
+ng g s autenticacao/usuario/usuario
+ng g interface autenticacao/usuario/usuario
+ng g m componentes/cabecalho
+ng g c componentes/cabecalho
+ng g m componentes/rodape
+ng g c componentes/rodape
 
 ## Development server
 
