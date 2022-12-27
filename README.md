@@ -36,6 +36,11 @@ ng g m componentes/cabecalho
 ng g c componentes/cabecalho
 ng g m componentes/rodape
 ng g c componentes/rodape
+ng g c animais/animal
+ng g m componentes/cartao
+ng g c componentes/cartao
+ng g s animais/animais
+ng g interface animais/animais
 
 ## Development server
 
