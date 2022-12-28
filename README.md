@@ -44,6 +44,9 @@ ng g interface animais/animais
 ng g c animais/grade_fotos_animais
 ng g guard autenticacao/autenticacao
 ng g guard autenticacao/login
+ng g c animais/detalhe-animal
+ng g interceptor autenticacao/autenticacao
+
 
 ## Development server
 
