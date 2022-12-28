@@ -15,7 +15,7 @@ necessário adicionar em styles do angular.json:
 "./node_modules/bootstrap/dist/css/bootstrap.min.css",
 "./node_modules/font-awesome/css/font-awesome.css"
 
-## criação de serviços/componentes/módulos
+## criação de serviços/componentes/módulos...
 ng generate module home --routing
 ng g c home
 ng g c home/login
@@ -41,6 +41,9 @@ ng g m componentes/cartao
 ng g c componentes/cartao
 ng g s animais/animais
 ng g interface animais/animais
+ng g c animais/grade_fotos_animais
+ng g guard autenticacao/autenticacao
+ng g guard autenticacao/login
 
 ## Development server
 
