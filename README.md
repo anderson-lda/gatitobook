@@ -51,6 +51,9 @@ ng g s animais/detalhe-animal/comentarios/comentarios
 ng g interface animais/detalhe-animal/comentarios/comentarios
 ng g resolver animais/lista-animais/lista-animais
 ng g m shared
+ng g m componentes/menu
+ng g c componentes/menu 
+ng g c animais/novo-animal
 
 ## Development server
 

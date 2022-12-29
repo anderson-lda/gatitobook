@@ -11,7 +11,7 @@ import { TokenService } from './token.service';
 
 @Injectable()
 export class AutenticacaoInterceptor implements HttpInterceptor {
-
+  //insere headers em todas requisições à API, após o login
   constructor(private tokenService: TokenService) {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {

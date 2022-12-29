@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MensagemModule } from '../componentes/mensagem/mensagem.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
+//classe para reunir módulos importados por mais de um outro módulo
 
 @NgModule({
   imports: [
