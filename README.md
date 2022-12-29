@@ -59,6 +59,10 @@ ng g c animais/novo-animal
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Servidor de produção
+npm i -g http-server
+após o build, rodar:
+http-server
 
 ## Build
 
