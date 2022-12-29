@@ -46,7 +46,11 @@ ng g guard autenticacao/autenticacao
 ng g guard autenticacao/login
 ng g c animais/detalhe-animal
 ng g interceptor autenticacao/autenticacao
-
+ng g c animais/detalhe-animal/comentarios
+ng g s animais/detalhe-animal/comentarios/comentarios
+ng g interface animais/detalhe-animal/comentarios/comentarios
+ng g resolver animais/lista-animais/lista-animais
+ng g m shared
 
 ## Development server
 
